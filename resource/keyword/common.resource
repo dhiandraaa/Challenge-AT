@@ -1,5 +1,5 @@
 *** Keywords ***
-User open browser
+user open browser
     [Arguments]
     ...     ${browser}=chromium
     ...     ${screen}=${SCREEN}
@@ -23,11 +23,11 @@ User open browser
     ...     isMobile=${_is_mobile}
     ...     hasTouch=${_has_touch}
 
-User open the website
+user open the website
     [Arguments]
     ...     ${url}=${BASE URL}
 
-    User open browser    
+    user open browser    
     New page    ${url}    domcontentloaded
 
 Element should be visible

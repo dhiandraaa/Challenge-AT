@@ -1,7 +1,7 @@
 *** Keywords ***
 
 # ACTION
-User login with
+user login with
     [Arguments]
     ...    ${email}
     ...    ${password}
@@ -9,3 +9,22 @@ User login with
     Type text    ${EMAIL INPUT TEXT}    ${email}
     Type text    ${PASSWORD INPUT TEXT}    ${password}
     Click on    ${LOGIN BUTTON}
+
+# ASSERT
+user should see error message
+    [Arguments]    ${expect error}
+
+    ${actual error}
+    ...     Set variable
+    ...     //*[text()='${expect error}']
+
+    Wait for elements state    ${actual error}    visible
+
+user should see error banner
+    [Arguments]    ${expect banner}
+
+    ${actual banner}
+    ...     Set variable
+    ...     //*[text()='${expect banner}']
+    
+    Wait for elements state    ${actual banner}    visible
