@@ -1,6 +1,7 @@
 *** Variables ***
 #URL
 ${BASE URL}               https://mifx.com/
+${FORGOT PASSWORD URL}    ${BASE URL}clientarea/forgot
 
 #User
 ${USER VALID EMAIL}           qa9.dhiandra@gmail.com

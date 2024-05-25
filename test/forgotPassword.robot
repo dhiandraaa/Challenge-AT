@@ -6,15 +6,11 @@ Force Tags
 Test Setup          user open the website
 Test Teardown       Close Browser    ALL
 
-*** Variables ***
-${valid email}            ${USER VALID EMAIL}
-${valid password}         ${USER VALID PASSWORD}
-
 *** Test Cases ***
 I should redirect to forgot password page
     Given user click on login entry point
     When user click on forgot password link
-    Then user redirect to    https://mifx.com/clientarea/forgot
+    Then user redirect to    ${FORGOT PASSWORD URL}
         And user should see forgot password title visible
         And user should see email input text enable
         And user should see reset password button enable
