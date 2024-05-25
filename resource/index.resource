@@ -13,9 +13,11 @@ Library             String
 ### Resource
 Resource            keyword/common.resource
 Resource            keyword/dashboard.resource
+Resource            keyword/forgotPassword.resource
 Resource            keyword/login.resource
 
-Resource            pageObject/dashboard.resource
-Resource            pageObject/login.resource
+Resource            pageObject/dashboardPO.resource
+Resource            pageObject/forgotPasswordPO.resource
+Resource            pageObject/loginPO.resource
 
 Resource            properties.resource

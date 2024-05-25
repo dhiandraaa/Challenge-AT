@@ -62,3 +62,8 @@ User redirect to
 
 Wait for loading
     Set Browser Timeout    30s
+
+Element should be enabled
+    [Arguments]    ${element}
+
+    Get element states  ${element}    contains    enabled

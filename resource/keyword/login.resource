@@ -10,6 +10,9 @@ user login with
     Type text    ${PASSWORD INPUT TEXT}    ${password}
     Click on    ${LOGIN BUTTON}
 
+user click on forgot password link
+    Click on    ${FORGOT PASSWORD LINK}
+
 # ASSERT
 user should see error message
     [Arguments]    ${expect error}
